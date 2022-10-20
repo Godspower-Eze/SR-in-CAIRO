@@ -1,0 +1,13 @@
+["protostar.config"]
+protostar_version = "0.6.0"
+
+["protostar.project"]
+libs_path = "lib"
+
+["protostar.contracts"]
+main = [
+    "src/main.cairo",
+]
+student_database = [
+    "src/student_database.cairo"
+]

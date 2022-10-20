@@ -1,0 +1,76 @@
+[
+    {
+        "members": [
+            {
+                "name": "name",
+                "offset": 0,
+                "type": "felt"
+            },
+            {
+                "name": "age",
+                "offset": 1,
+                "type": "felt"
+            }
+        ],
+        "name": "Student",
+        "size": 2,
+        "type": "struct"
+    },
+    {
+        "data": [
+            {
+                "name": "timestamp",
+                "type": "felt"
+            },
+            {
+                "name": "student",
+                "type": "Student"
+            }
+        ],
+        "keys": [],
+        "name": "student_added",
+        "type": "event"
+    },
+    {
+        "inputs": [],
+        "name": "constructor",
+        "outputs": [],
+        "type": "constructor"
+    },
+    {
+        "inputs": [
+            {
+                "name": "student_address",
+                "type": "felt"
+            },
+            {
+                "name": "name",
+                "type": "felt"
+            },
+            {
+                "name": "age",
+                "type": "felt"
+            }
+        ],
+        "name": "add_student_record",
+        "outputs": [],
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "name": "student_address",
+                "type": "felt"
+            }
+        ],
+        "name": "get_student",
+        "outputs": [
+            {
+                "name": "student",
+                "type": "Student"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    }
+]
